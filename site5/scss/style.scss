@@ -1,0 +1,211 @@
+@import "base/variables";
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Oswald;
+	font-style: normal;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.header {
+	background: url(../img/Rectangle.jpg) center (center/cover) no-repeat;
+	padding-top: 20px;
+	padding-bottom: 58px;
+	min-height: 948px;
+	position: relative;
+}
+.tab {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	position: relative;
+}
+.hamburger {
+	border-radius: 2px;
+	width: 50px;
+	height: 50px;
+	background-color: $accent;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	span {
+		display: block;
+		height: 3px;
+		width: 20px;
+		background-color: #fff;
+		margin-bottom: 4px;
+		transition: 0.5s all;
+	}
+	&_active {
+		span {
+			margin-bottom: -2px;
+			&:nth-child(1) {
+				transform: translateY(3px) rotate(-45deg);
+			}
+			&:nth-child(2) {
+				display: none;
+			}
+			&:nth-child(3) {
+				transform: translateY(3px) rotate(45deg);
+			}
+		}
+	}
+}
+.logo-title {
+	margin-top: 112px;
+	text-align: center;
+	color: $white;
+
+	font-size: 64px;
+	line-height: 95px;
+	text-transform: uppercase;
+}
+.logo-subtitle {
+	margin-top: 35px;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.numbers {
+	width: 1110px;
+	height: 300px;
+	background: $white;
+	position: absolute;
+	bottom: 58px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	&__box {
+		margin-left: 75px;
+		margin-right: 75px;
+	}
+}
+
+.numbers__title {
+	font-weight: 500;
+	font-size: 72px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $accent;
+}
+.numbers__subtitle {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 53px;
+	text-align: center;
+	color: $dark;
+}
+
+.numbers__descr {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	color: $gray;
+}
+
+.project {
+	background-color: $white;
+	padding-top: 56px;
+	padding-bottom: 125px;
+}
+
+.title {
+	font-size: 36px;
+	line-height: 53px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.project-arena {
+	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
+	img {
+		height: 380px;
+		width: 350px;
+	}
+	&__item {
+		margin-top: 60px;
+		margin-right: 8px;
+		margin-left: 8px;
+		&__title {
+			margin-top: 66px;
+			font-size: 24px;
+			line-height: 36px;
+			color: $dark;
+			position: relative;
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				height: 6px;
+				width: 55px;
+				background-color: $accent;
+				left: 0;
+				top: -20px;
+			}
+		}
+
+		&__descr {
+			margin-top: 20px;
+			font-size: 16px;
+			line-height: 22px;
+			color: $gray;
+			width: 350px;
+			height: 83px;
+		}
+	}
+}
+.request {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	background-color: $accent;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__title {
+		font-size: 48px;
+		line-height: 71px;
+		color: $white;
+	}
+	&__subtitle {
+		font-size: 24px;
+		line-height: 36px;
+		color: $white;
+		margin-top: 20px;
+	}
+	&__button {
+		width: 175px;
+		height: 49px;
+		background-color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		border-radius: 2px;
+		img {
+			margin-right: 15px;
+		}
+	}
+}

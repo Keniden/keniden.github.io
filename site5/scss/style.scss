@@ -345,7 +345,7 @@ button {
 		color: $gray;
 		position: relative;
 		&::before {
-			content: url(/img/“.png);
+			content: url(../img/“.png);
 			position: absolute;
 			top: 30px;
 		}

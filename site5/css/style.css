@@ -457,7 +457,7 @@ button {
 }
 
 .reviews__text::before {
-  content: url(/img/“.png);
+  content: url(../img/“.png);
   position: absolute;
   top: 30px;
 }

@@ -163,6 +163,10 @@ h6 {
   text-transform: uppercase;
 }
 
+.title__white {
+  color: #ffffff;
+}
+
 .project-arena {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,6 +181,8 @@ h6 {
 .project-arena img {
   height: 380px;
   width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project-arena__item {
@@ -255,6 +261,7 @@ h6 {
 }
 
 .request__button {
+  cursor: pointer;
   width: 175px;
   height: 49px;
   background-color: #ffffff;
@@ -273,5 +280,177 @@ h6 {
 
 .request__button img {
   margin-right: 15px;
+}
+
+.services {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.services__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services__title {
+  font-size: 21px;
+  line-height: 31px;
+  margin-top: 30px;
+}
+
+.services__item {
+  margin-bottom: 30px;
+  height: 250px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7f7f7;
+}
+
+.services__item img {
+  width: 60px;
+  height: 40px;
+}
+
+.portfolio {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio__item {
+  height: 407px;
+  width: 480px;
+}
+
+.portfolio img {
+  display: block;
+}
+
+.questions {
+  padding: 150px 0 150px;
+}
+
+button {
+  background-color: transparent;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f7654a;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-height: 0;
+  overflow: hidden;
+  color: #999999;
+  -webkit-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+.accordion:before {
+  content: url(../img/Polygon.png);
+  margin-right: 10px;
+}
+
+.active:before {
+  content: url(../img/Polygon2.png);
+}
+
+.partners {
+  padding: 100px 0 100px;
+  background-color: #404149;
+}
+
+.partners__wrapper {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners__photo {
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.reviews {
+  padding: 150px 0 150px;
+}
+
+.reviews__wrapper {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__text {
+  width: 350px;
+  background-color: #f7f7f7;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 80px 30px 38px 30px;
+  color: #999999;
 }
 /*# sourceMappingURL=style.css.map */

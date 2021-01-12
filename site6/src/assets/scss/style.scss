@@ -1,0 +1,15 @@
+@import "_vars";
+@import "vendor/reset";
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #181818;
+    font-size: 1.4rem;
+    color: $white;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe\UI, Roboto, Helvetica\Neue, Arial, Noto\Sans, sans-serif;
+}
+
+// Blocks
+@import "blocks/sidebar";
+@import "blocks/main";
